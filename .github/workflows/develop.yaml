@@ -61,7 +61,7 @@ jobs:
         id: task-def
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
-          task-definition: deploy/ecs/deveop-task.json
+          task-definition: deploy/ecs/develop-task.json
           container-name: local-blog
           image: ${{ steps.build-image.outputs.image }}
 
